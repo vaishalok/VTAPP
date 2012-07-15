@@ -10,7 +10,81 @@
 			<span> This example demonstrate how HTML forms can be used. Submit button should submit the form and reset button should reset the form. The form layout should be as below. </span>
 			<h4> Contact Form </h4>
 			<form>
+				<!-- name -->
+				<span style="display:inline-block; width:110px"> Your Name*: </span>
+				<input type="text" size="40" name="name"/></br></br>
 				
+				<!-- email -->
+				<span style="display:inline-block; width:110px"> Email*: </span>
+				<input type="text" size="40" style="background-color:#ffffa0" name="email"/></br></br>
+				
+				<!-- phone -->
+				<span style="display:inline-block; width:110px"> Phone Number: </span>
+				<input type="text" size="40" style="background-color:#ffffa0" name="phone"/></br></br>
+				
+				<!-- website -->
+				<span style="display:inline-block; width:110px"> Website*: </span>
+				<input type="text" size="55" name="website"/></br></br>
+				
+				<!-- comments -->
+				<p> comments*: </p>
+				<textarea cols="40" rows="6" name="comments"></textarea></br></br>
+				
+				<!-- Text field -->
+				<h4 style="margin-bottom:0"> Text Field </h4>
+				<span style="display:inline-block; width:110px"> Your Name*: </span>
+				<input type="text" size="40" name="name2" style="background-color:#ffffa0"/></br>
+				
+				<!-- password field -->
+				<h4 style="margin-bottom:0"> Password Field </h4>
+				<span style="display:inline-block; width:110px"> Password: </span>
+				<input type="password" size="40" name="password"/></br>
+				
+				<!-- Radio Button -->
+				<h4 style="margin-bottom:0"> Radio Button </h4>
+				<p> Do you like Pizza? </p>
+				<input type="radio" name="like pizza" value="yes"/>Yes</br>
+				<input type="radio" name="like pizza" value="no"/>No</br>
+				<input type="radio" name="like pizza" value="May be"/>May be</br>
+				<input type="radio" name="like pizza" value="never tried"/>Never tried</br>
+				
+				<!-- check box -->
+				<h4 style="margin-bottom:0"> Check Box </h4>
+				<input type="checkbox" name="like service" value="yes"/>Check this box if you like our service</br>
+				
+				<!-- Text area -->
+				<h4 style="margin-bottom:0"> Text Area </h4>
+				<p style="margin-top:0; margin-bottom:0">Anything you would like to say?</p>
+				<textarea name="any comment" cols="50" rows="7"></TextArea></br>
+				
+				<!-- I Like -->
+				<h4 style="margin-bottom:0"> I Like </h4>
+				<select multiple="multiple" style="width:130px; height:90px">
+					<option value="mushrooms">mushrooms</option>
+					<option value="green peppers">green peppers</option>
+					<option value="onions">onions</option>
+					<option value="tomatoes">tomatoes</option>
+					<option value="olives">olives</option>
+				</select> 
+				
+				<!-- Menu -->
+				<h4 style="margin-bottom:0"> Menu </h4>
+				<p style="margin-bottom:0; margin-top:0;"> Your favorite color: </p>
+				<select name="color" style="width:70px">
+					<option>red</option>
+					<option>green</option>
+					<option>blue</option>
+					<option>black</option>
+				</select>
+				
+				<!-- Attach File -->
+				<h4 style="margin-bottom:0"> Attach File </h4>
+				<input type="file" name="selectfile" size="40">
+				
+				<!-- Buttons -->
+				<h4 style="margin-bottom:0"> Buttons </h4>
+				<input type="submit" value="Submit">
+				<input type="reset" value="Reset">
 			</form>
 		</div>
 	</body>
