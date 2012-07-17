@@ -1,1 +1,24 @@
 * {margin:0; padding:0;}
+
+.horizontal_menu {
+	height:37px;
+	width:650px;
+	border-bottom-style:solid; 
+	border-color:#6d6d6d;
+}
+.horizontal_menu > li {
+	list-style-type:none;
+	float:left;
+	font-family:"Georgia", "serif";
+	font-style:italic;
+	font-size:18px;
+	color:black;
+	background-color:#cfcfcf;
+	padding-left:20px;
+	padding-right:20px;
+	padding-top:10dip;
+	padding-bottom:10dip;
+	margin-left:2px;
+}
+.horizontal_menu > li:hover ul {display:block;}
+.horizontal_menu > li ul {display:none;}
