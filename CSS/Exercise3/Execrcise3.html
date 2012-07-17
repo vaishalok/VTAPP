@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link href="Exercise3.css" rel="stylesheet" type="text/css">
+	</head>
+	
+	<body>
+		<div class="container">
+			<div class="header">
+				<img class="logo" src="vinsol-logo.png"></img>
+				<div class="contact">
+					Email us at:<a href="http://www.@vinsol.com/contact"> sales@vinsol.com </a>
+					Skype:<a href="http://www.@vinsol.com/contact"> Vinsol </a>
+				</div>
+			</div>
+				
+			<p class="form_heading"> Please fill the form below </p>
+			
+			<form>
+				<!-- first name -->
+				<span class="form_label"> First Name </span>
+				<input type="text" name="name"/></br>
+				
+				<!-- last name -->
+				<span class="form_label"> Last Name </span>
+				<input type="text" name="last_name"/></br>
+				
+				<!-- email -->
+				<span class="form_label"> Email Address </span>
+				<input type="text" name="email"/></br>
+				
+				<!-- password -->
+				<span class="form_label"> Password </span>
+				<input type="password" name="password"/></br>
+				
+				<!-- Gender -->
+				<span class="form_label"> Gender </span>
+				<div class="gender">
+					<input type="radio" name="gender" value="male"/>Male
+					<input type="radio" name="gender" value="female"/>Female</br>
+				</div>
+				
+				<!-- DOB -->
+				<span class="form_label">Date of Birth</span>
+				<select id="date" name="DD">
+					<option>DD</option>
+				</select>
+				<select id="month">
+					<option>MM</option>
+				</select>
+				<select id="year">
+					<option>YY</option>
+				</select>
+					
+				<!-- address -->
+				<span class="form_label"> Address </span>
+				<textarea name="comments"></textarea></br>
+							
+				<!-- submit Button -->
+				<input class="submit" type="submit" value="Submit Details">
+			</form>
+		</div>
+	</body>
+</html>
