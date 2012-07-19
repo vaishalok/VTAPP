@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Exercise1(Select All Or None) </title>
+		<script language="JavaScript">
+			function setCheck(check) {
+				var checkBoxes = document.getElementsByName("color");
+				for(var checkBox in checkBoxes) {
+					checkBoxes[checkBox].checked = check;	
+				}
+				return false;
+			}	
+		</script>
+	</head>
+	
+	<body>
+		<form>
+			<p> Select Colors: </p>
+			<div id="checkboxes">
+				<input type="checkbox" name="color" value="Red"/> Red</br>
+				<input type="checkbox" name="color" value="Green"/> Green</br>
+				<input type="checkbox" name="color" value="Yellow"/> Yellow</br>
+				<input type="checkbox" name="color" value="White"/> White</br>
+				<input type="checkbox" name="color" value="Black"/> Black</br>
+			</div>
+			</br>
+			
+			<a href="" style="margin-right:10px;" onClick="return setCheck(true);"> Check All </a>
+			<a href="" onClick="return setCheck(false);"> None </a>		
+		</form>
+	</body>
+</html>
