@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Exercise2(Maximum three checkbox selected) </title>
+		<script language="JavaScript">
+			
+			/* function checkCheckboxes() */
+			function checkCheckboxes(currentCheckBox) {
+				if(currentCheckBox.checked) {
+					var checkBoxes = document.getElementsByName("week");
+					var selectedDays = new Array();
+					var selectedDaysCount = 0;
+					var noneCheckBox;
+					
+					//uncheck none check box
+					noneCheckBox = document.getElementsByName("none");
+					noneCheckBox[0].checked = false;
+					
+					for(checkBox in checkBoxes) {
+						if(checkBoxes[checkBox].checked) {
+							selectedDaysCount++;
+							
+							if(checkBoxes[checkBox] != currentCheckBox) {
+								selectedDays.push(checkBoxes[checkBox].value);
+							}
+							
+							if(selectedDaysCount > 3) {
+								break;
+							}
+						}
+					}
+				
+					if(selectedDaysCount > 3) {
+						currentCheckBox.checked = false;
+						alert("Only 3 days can be selected. You have already selected " + selectedDays[0] + ", " + selectedDays[1] + " and " + selectedDays[2]  + ".");
+					}
+				}			
+			}	
+			
+			/* function deselectAll() */	
+			function deselectAll(noneCheckBox) {
+				if(noneCheckBox.checked) {
+					var checkBoxes = document.getElementsByName("week");
+					for(checkBox in checkBoxes) {
+						checkBoxes[checkBox].checked = false;
+					}
+				}
+			}	
+		</script>
+	</head>
+	
+	<body>
+		<form>
+			<p> Select Colors: </p>
+			<input type="checkbox" name="week" value="Sunday" onChange="checkCheckboxes(this);"/> Sunday </br>
+			<input type="checkbox" name="week" value="Monday" onChange="checkCheckboxes(this);"/> Monday </br>
+			<input type="checkbox" name="week" value="Tuesday" onChange="checkCheckboxes(this);"/> Tuesday </br>
+			<input type="checkbox" name="week" value="Wednesday" onChange="checkCheckboxes(this);"/> Wednesday </br>
+			<input type="checkbox" name="week" value="Thursday" onChange="checkCheckboxes(this);"/> Thursday </br>
+			<input type="checkbox" name="week" value="Friday" onChange="checkCheckboxes(this);"/> Friday </br>
+			<input type="checkbox" name="week" value="Saturday" onChange="checkCheckboxes(this);"/> Saturday </br>
+			<input type="checkbox" name="none" value="None" onChange="deselectAll(this);"/> None </br>	
+		</form>
+	</body>
+</html>
