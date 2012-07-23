@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Exercise4(Parent Checkbox and their children checkbox - movies, drinks and bikes) </title>
+		<link rel="stylesheet" type="text/css" href="Exercise4.css"/>
+		<script type="text/javascript" src="Exercise4.js"></script>
+	</head>
+	
+	<body>
+		<div class="mainDiv">
+			<!-- colors -->
+			<label onClick="expandSubCheckboxes(this);"><input type="checkbox" name="parent" value="Colors" /> Colors</br></label>
+			<div class="subDiv">
+				<label><input type="checkbox" name="color" value="Red"/> Red</br></label>
+				<label><input type="checkbox" name="color" value="Yellow"/> Yellow</br></label>
+				<label><input type="checkbox" name="color" value="Green"/> Green</br></label>
+				<label><input type="checkbox" name="color" value="Blue"/> Blue</br></label>	
+			</div>	
+			
+			<!-- Movies -->
+			<label onClick="expandSubCheckboxes(this);"><input type="checkbox" name="parent" value="Movies"/> Movies</br></label>
+			<div class="subDiv">
+				<label><input type="checkbox" name="movie" value="Dar"/> Dar</br></label>
+				<label><input type="checkbox" name="movie" value="Sir"/> Sir</br></label>
+			</div>	
+			
+			<!-- drinks -->
+			<label onClick="expandSubCheckboxes(this);"><input type="checkbox" name="parent" value="Drinks"/> Drinks</br></label>
+			<div class="subDiv">
+				<label><input type="checkbox" name="drink" value="Coke"/> Coke</br></label>
+				<label><input type="checkbox" name="drink" value="Pepsi"/> Pepsi</br></label>
+				<label><input type="checkbox" name="drink" value="Dew"/> Dew</br></label>
+			</div>	
+			
+			<!-- bikes -->
+			<label onClick="expandSubCheckboxes(this);"><input type="checkbox" name="parent" value="Bikes"/> Bikes</br></label>
+			<div class="subDiv">	
+				<label><input type="checkbox" name="bike" value="V-rod"/> V-rod</br></label>
+				<label><input type="checkbox" name="bike" value="Pulsar"/> Pulser</br></label>
+				<label><input type="checkbox" name="bike" value="CBZ"/> CBZ</br></label>
+			</div>	
+		</div>
+		</br>		
+	</body>
+</html>

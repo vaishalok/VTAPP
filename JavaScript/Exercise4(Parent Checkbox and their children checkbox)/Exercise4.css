@@ -1,0 +1,10 @@
+.mainDiv {
+	max-height:100px; 
+	overflow:auto;
+}
+
+.subDiv {
+	margin-left:30px;
+	display:none;	
+}
+
