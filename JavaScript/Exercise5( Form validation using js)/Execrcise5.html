@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Exercise 5 (Form Validation)</title>
+		<link href="Exercise5.css" rel="stylesheet" type="text/css">
+		<script type="text/javascript" src="Exercise5.js"></script>
+	</head>
+	
+	<body>
+		<div class="container">
+				
+			<p class="form_heading"> Registration Form </p>
+			
+			<form name="registration" onsubmit="return validateForm();" method="post">
+				<!-- login ID -->
+				<span class="form_label"> Login Id </span>
+				<input type="text" name="loginId"/></br>
+				
+				<!-- email -->
+				<span class="form_label"> Email </span>
+				<input type="text" name="email"/></br>
+				
+				<!-- name -->
+				<span class="form_label"> Name </span>
+				<input type="text" name="name"/></br>
+				
+				<!-- Time zone -->
+				<span class="form_label">Time Zone</span>
+				<select id="timezone" name="timeZone">
+					<option>GMT</option>
+				</select></br>
+				
+				<!-- Home Page -->
+				<span class="form_label"> Home Page </span>
+				<input type="text" name="homePage"/></br>
+				
+					
+				<!-- about me -->
+				<span class="form_label"> About Me </span>
+				<textarea name="aboutMe"></textarea></br>
+				
+				<label class="bold"><input type="checkbox" name="receiveNotification" > Receive notification of Comments</label></br>
+				<p>You will be sent an email when someone posts comments to your blog or album.</p>
+				
+				<p><center>Your password will be mailed to you.</center></p>
+							
+				<!-- submit Button -->
+				<center><input class="submit" type="submit" value="Go"/></center>
+			</form>
+		</div>
+	</body>
+</html>
