@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Exercise 8 (Move countries from one box to the other)</title>
+		<link  type="text/css" href="Exercise8.css" rel="stylesheet"/>
+		<script type="text/javascript" src="Exercise8.js"></script>
+	</head>
+	
+	<body>
+		<select id="leftMultiBox" multiple="multiple">
+			<option value="Afganistan">Afghanistan</option>
+			<option value="Albania">Albania</option>
+			<option value="Algeria">Algeria</option>
+			<option value="American Samoa">American Samoa</option>
+			<option value="Andorra">Andorra</option>
+			<option value="Angola">Angola</option>
+			<option value="Anguilla">Anguilla</option>
+			<option value="Antigua &amp; Barbuda">Antigua &amp; Barbuda</option>
+			<option value="Argentina">Argentina</option>
+			<option value="Armenia">Armenia</option>
+			<option value="Aruba">Aruba</option>
+			<option value="Australia">Australia</option>
+			<option value="Austria">Austria</option>
+			<option value="Azerbaijan">Azerbaijan</option>
+			<option value="Bahamas">Bahamas</option>
+			<option value="Bahrain">Bahrain</option>
+			<option value="Bangladesh">Bangladesh</option>
+			<option value="Barbados">Barbados</option>
+			<option value="Belarus">Belarus</option>
+		</select>
+		
+		<select id="rightMultiBox" multiple="multiple"></select>
+		
+		<button id="addButton" onclick="moveItems('leftToRight')">Add</button>
+		<button id="removeButton" onclick="moveItems('rightToLeft')">Remove</button>
+	</body>
+</html>
